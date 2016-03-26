@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    color: #222;
+}
+li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #534A27;
+    /* margin-left: 10PX; */
+}
+li:first-child a{
+    border-left: none;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* GRID */
+.col{
+       margin-right: 3%;
+       float: left;
+       margin-top: 1%;
+
+}
+.col:last-child{
+    margin-right: 0;
+}
+.col-12{
+    width: 100%;
+}
+.col-3{ 
+    width: 22.74%;
+    height: 380px;
+}
+.col-3 h3{
+    margin: 15px 0;
+}
+.cuatro_col_50 .col-3{
+    height: 220px;
+}
+
+img{
+    width: 100%;
+    border: 0;
+}
+
+
+/* HEADER */
+header{
+    padding: 10px 0;
+    border-bottom: 1px solid #ededed;
+    font-weight: 600; 
+}
+#logo{
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+#logo img{
+    width: 90px;
+    height: 90px;
+}
+
+nav{
+    float: right;
+}
+header nav li{
+    float: left;
+    line-height: 90px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+header nav li a{
+    -webkit-transition: opacity .5s ease-out;
+    opacity: .5;
+}
+header nav li a:hover{
+    opacity: 1;
+}
+
+.active{
+   opacity: 1;
+}
+li > a {
+  position: relative;
+  color: #534A27;
+  text-decoration: none;
+}
+
+li > a:hover {
+  color: #534A27;
+}
+li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #534A27;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
+
+/* BANNER */
+
+#banner{
+    height: 400px;
+    max-width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+#banner img{
+    width: 100%;
+}
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #E5DFC8;
+    position: absolute;
+    cursor: pointer;
+
+}
+.uno{
+    bottom: 15px;
+    right: 180px;
+}
+.dos{
+    bottom: 15px;
+    right: 150px;
+}
+.tres{
+    bottom: 15px;
+    right: 120px;
+}
+.cuatro{
+    bottom: 15px;
+    right: 90px;
+}
+.cinco{
+    bottom: 15px;
+    right: 60px;
+}
+
+/* TEXTO PRINCIPIAL */
+h1{
+    font-size: 1.5em;
+    padding: 30px;
+    text-align: center;
+    font-weight: 300;
+    color: #534A27;
+}
+
+/* CARACTERISTICAS */
+.caracteristicas{
+    overflow: hidden;
+}
+h2{
+    margin: 10px 0;
+    color: #555555;
+}
+.col-3 p{
+    color: #555555;
+    line-height: 1.5em;
+}
+/* COMERCIAL */ 
+
+#frase_comercial{
+    background: #DBD3B3;
+    margin-bottom: 20px;
+    padding: 15px;
+    -webkit-box-shadow: 0 8px 6px -6px #ddd;
+    -moz-box-shadow: 0 8px 6px -6px #ddd;
+    box-shadow: 0 8px 6px -6px #ddd;
+    overflow: hidden;
+
+}
+#frase_comercial h3{
+    font-size: 1.3em;
+    float: left;
+    padding: 10px;
+    color: #555555;
+}
+#frase_comercial a{
+    float: right;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 20px;
+    display: block;
+    padding: 10px;
+    margin-top: 3px;
+    color: #222;
+    font-weight: bold;
+}
+
+/* PROMOS  */
+.cuatro_col_50.promos{
+    overflow: hidden;
+}
+.cuatro_col_50 .col-3 p{
+    width: 40%;
+    float: left;
+    font-size: 0.95em;
+}
+.cuatro_col_50 .col-3 img{
+    width: 55%;
+    float: right;
+}
+
+/* FOOTER */ 
+#datos_empresa{
+    float: left;
+    width: 50%;
+}
+footer li{
+    color: #555555;
+    margin: 5px 0;
+}
+footer li:first-child{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+footer li:last-child{
+    margin-bottom: 30px;
+}
+#social_icons{
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+#social_icons img{
+    width: 32px;
+}
+#legal span:first-child{
+    float: left;
+}
+#legal span:last-child{
+    float: right;
+}
+
+/* PAGINA QUIENES SOMOS=========================
+================================================*/ 
+
+#quienes_somos h1{
+    text-align: center;
+    font-size: 2em;
+    margin: 15px 0;
+}
+.parrafos p{
+    line-height: 1.5em;
+}
+.parrafos p:last-child{
+    margin-top: 30px;
+}
+.col-6{
+    width: 48.48%;
+}
+.slide_quienes_somos{
+    position: relative;
+}
+ 
+.one{
+    bottom: 30px;
+    left: 400px;
+    
+}
+.two{
+    bottom: 30px;
+    left: 430px;
+    
+}
+.three{
+    bottom: 30px;
+    left: 460px;
+    
+}
+.four{
+    bottom: 30px;
+    left: 490px;  
+}
+.five{
+    bottom: 30px;
+    left: 520px;  
+}
+
+/* Nuestra Firma */
+
+#nuestra_firma p{
+    font-size: .9em;
+}
+#nuestra_firma h2{
+    text-transform: uppercase;
+}
+
+/* Nuestro equipo */
+.cuatro_col_50.nuestro_equipo h2{
+    text-transform: uppercase;
+    margin-bottom: -10px;
+}
+footer .container{
+    background: #DBD3B3;
+    padding: 10px;
+}
+
+/* PAGINA SERVICIOS */
+
+.col-6{
+    width: 48.48%;
+    margin-bottom: 30px;
+}
+.col-6.nomargin{
+    margin-right: 0;
+}
+.dos_col_50 h2{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+}
+.dos_col_50 .col-6 img{
+    width: 20%;
+    float: left;
+}
+.dos_col_50 .col-6 h3{
+    margin-bottom: 5px;
+}
+.dos_col_50 .col-6 h3, .dos_col_50 .col-6 p{
+    width: 75%;
+    float: right;
+    color: #555555;
+    line-height: 1.5em;
+}
+.col-6 img{
+    margin-top: 5px;
+}
+.compromiso .col-3 p{
+    margin-top: 10px;
+}
+.compromiso .col-3{
+    height: 300px;
+}
